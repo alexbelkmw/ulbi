@@ -8,6 +8,9 @@
     "allowJs": true, //компилятор обрабатывает JS файлы
     "moduleResolution": "node",
     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     "esModuleInterop": true, //позволяет импортировать в виде import * from 'lib'
     "allowSyntheticDefaultImports": true //позволяет импортировать библеотеку без defaul import
   },

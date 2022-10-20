@@ -1,21 +1,44 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'standard-with-typescript'
-  ],
-  overrides: [
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended'],
+  parser: '@typescript-eslint/parser',
+  overrides: [],
   parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
-  plugins: [
-    'react'
-  ],
+  plugins: ['react', '@typescript-eslint', 'i18next'],
   rules: {
-  }
-}
+    'import/no-unresolved': 'off',
+    'react/jsx-filename-extension': [
+      2,
+      { extensions: ['.js', '.jsx', '.tsx'] },
+    ],
+    'import/extensions': 'off',
+    'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'react/function-component-definition': 'off',
+    'react/jsx-wrap-multilines': [
+      'error',
+      { declaration: false, assignment: false },
+    ],
+    'max-len': ['error', { ignoreComments: true }],
+    'no-shadow': 'off',
+    'no-unused-vars': 'warn',
+    'no-underscore-dangle': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/require-default-props': 'off',
+    'no-undef': 'off',
+    'react/jsx-props-no-spreading': 'warn',
+    'i18next/no-literal-string': ['error', { markupOnly: true }],
+  },
+  globals: {
+    __IS_DEV__: true,
+  },
+};

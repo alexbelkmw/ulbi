@@ -15,11 +15,12 @@ export const Sidebar = ({ className }: SidebarProps) => {
   };
   return (
     <div
+      data-testid="test-id"
       className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [
         className,
       ])}
     >
-      <button type="button" onClick={onToggle}>
+      <button data-testid="test-id-button" type="button" onClick={onToggle}>
         Toggle
       </button>
       <div className={cls.switchers}>

@@ -1,5 +1,7 @@
 {
-    "Translate": "Русский", 
-    "MainPage": "Главная страница",
-    "PageNotFound": "Страница не найдена"
+  "Translate": "Русский",
+  "MainPage": "Главная страница",
+  "PageNotFound": "Страница не найдена",
+  "SomethingWentWrong": "Что-то пошло не так",
+  "Refresh": "Обновить"
 }

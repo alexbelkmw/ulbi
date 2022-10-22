@@ -1,5 +1,7 @@
 {
-    "Translate": "English", 
-    "MainPage": "Main Page",
-    "PageNotFound": "Page Not Found"
+  "Translate": "English",
+  "MainPage": "Main Page",
+  "PageNotFound": "Page Not Found",
+  "SomethingWentWrong": "Something went wrong",
+  "Refresh": "Refresh"
 }

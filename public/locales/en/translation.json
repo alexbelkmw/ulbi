@@ -3,5 +3,7 @@
   "MainPage": "Main Page",
   "PageNotFound": "Page Not Found",
   "SomethingWentWrong": "Something went wrong",
-  "Refresh": "Refresh"
+  "Refresh": "Refresh",
+  "Main": "Main",
+  "About": "About"
 }

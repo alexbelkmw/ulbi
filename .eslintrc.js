@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended'],
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+    'plugin:i18next/recommended',
+    'plugin:storybook/recommended',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -17,7 +22,9 @@ module.exports = {
     'import/no-unresolved': 'off',
     'react/jsx-filename-extension': [
       2,
-      { extensions: ['.js', '.jsx', '.tsx'] },
+      {
+        extensions: ['.js', '.jsx', '.tsx'],
+      },
     ],
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
@@ -25,9 +32,17 @@ module.exports = {
     'react/function-component-definition': 'off',
     'react/jsx-wrap-multilines': [
       'error',
-      { declaration: false, assignment: false },
+      {
+        declaration: false,
+        assignment: false,
+      },
     ],
-    'max-len': ['error', { ignoreComments: true }],
+    'max-len': [
+      'error',
+      {
+        ignoreComments: true,
+      },
+    ],
     'no-shadow': 'off',
     'no-unused-vars': 'warn',
     'no-underscore-dangle': 'off',
@@ -37,7 +52,10 @@ module.exports = {
     'react/jsx-props-no-spreading': 'warn',
     'i18next/no-literal-string': [
       'error',
-      { markupOnly: true, ignoreAttribute: ['data-testid'] },
+      {
+        markupOnly: true,
+        ignoreAttribute: ['data-testid', 'to'],
+      },
     ],
   },
   globals: {

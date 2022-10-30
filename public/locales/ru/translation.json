@@ -3,5 +3,7 @@
   "MainPage": "Главная страница",
   "PageNotFound": "Страница не найдена",
   "SomethingWentWrong": "Что-то пошло не так",
-  "Refresh": "Обновить"
+  "Refresh": "Обновить",
+  "Main": "Главная",
+  "About": "О сайте"
 }

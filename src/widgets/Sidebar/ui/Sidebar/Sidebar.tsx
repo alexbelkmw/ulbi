@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
@@ -13,6 +14,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
   const onToggle = () => {
     setCollapted((prev) => !prev);
   };
+  const { t } = useTranslation();
   return (
     <div
       data-testid="test-id"
@@ -21,7 +23,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
       ])}
     >
       <button data-testid="test-id-button" type="button" onClick={onToggle}>
-        Toggle
+        {t('Toggle')}
       </button>
       <div className={cls.switchers}>
         <ThemeSwitcher />
